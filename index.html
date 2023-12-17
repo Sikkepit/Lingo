@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lingo</title> 
+</head>
+<body>
+    <div class="container">
+        <div id="overlay">
+            <div id="overlay-content">
+                <h1 id="win-lose-message">JE HEBT HET WOORD GERADEN</h1>
+                <h3 id="win-lose-h3">Totaal geraden:</h3>
+                <h4 id="win-lose-h4">1</h4><br>
+                <button id="nextWordButton" onclick="prepareGameField()">VOLGENDE WOORD</button>
+                <button id="loseButton" onclick="location.reload()">OPNIEUW PROBEREN</button>
+            </div>
+        </div>
+        <div id="guesses">
+            <div class="word" id="word1">
+                <div id="word1_1"></div>
+                <div id="word1_2"></div>
+                <div id="word1_3"></div>
+                <div id="word1_4"></div>
+                <div id="word1_5"></div>
+            </div>
+            <div class="word" id="word2">
+                <div id="word2_1"></div>
+                <div id="word2_2"></div>
+                <div id="word2_3"></div>
+                <div id="word2_4"></div>
+                <div id="word2_5"></div>
+            </div>
+            <div class="word" id="word3">
+                <div id="word3_1"></div>
+                <div id="word3_2"></div>
+                <div id="word3_3"></div>
+                <div id="word3_4"></div>
+                <div id="word3_5"></div>
+            </div>
+            <div class="word" id="word4">
+                <div id="word4_1"></div>
+                <div id="word4_2"></div>
+                <div id="word4_3"></div>
+                <div id="word4_4"></div>
+                <div id="word4_5"></div>
+            </div>
+            <div class="word" id="word5">
+                <div id="word5_1"></div>
+                <div id="word5_2"></div>
+                <div id="word5_3"></div>
+                <div id="word5_4"></div>
+                <div id="word5_5"></div>
+            </div>
+        </div>
+        <div class="input-word">
+            <input type="text" id="guess" minlength="5" maxlength="6" placeholder="">
+            <button id="submit">OK</button>
+        </div>
+    </div>
+
+
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>

@@ -111,8 +111,8 @@ prepareGameField();
 
 function chooseWinningWord() {
     let winningWordIndex = Math.floor(Math.random() * wordList.length);
-    let winningWord = "TONIJN";
-    // let winningWord = wordList[winningWordIndex];
+    // let winningWord = "TONIJN";
+    let winningWord = wordList[winningWordIndex];
     return ijCheck(winningWord);
 }
 

@@ -65,7 +65,8 @@ let wordList = ["appel", "aldus", "afwas", "aftel", "aarde", "altijd", "armen", 
 "porto", "pilot", "petje", "print", "plant", "peper", "prees", "quota", "quote", "qatar", "robot", "rijden", "reken", "raden", 
 "regen", "radio", "rente", "regio", "rugby", "reden", "roken", "ruzie", "ruist", "regel", "racen", "races", "radar", "recht", 
 "flets", "flats", "kater", "tepel", "kinds", "piekt", "wiegt", "zebra", "deken", "daken", "bedel", "vulva", "kille", "braak",
-"poets", "koter", "anker", "barst", "kregen", "adder", "imker", "aards", 
+"poets", "koter", "anker", "barst", "kregen", "adder", "imker", "aards", "poker", "vlaag", "leken", "larve", "oksel", "eerst",
+"huilt", "eikel", "duikt", "deert", "bruid", "baars", "baard", 
 "raken", "reist", "ronde", "regie", "ruime", "route", "ruilt", "raakt", "rijtje", "ruige", "rende", "ramde", "ratio", "rijder", 
 "rover", "raket", "roest", "ramen", "roman", "reeks", "revue", "rijker", "roept", "reeds", "range", "richt", "rhode", "rijken", 
 "river", "rigby", "rozen", "ruikt", "riekt", "retro", "staan", "staal", "speel", "steeg", "stoel", "stook", "steek", "schep", 
@@ -272,7 +273,6 @@ function addGuessToList(guessedWord) {
             // Setup next row
             if (guessedWord !== winningWord) {
                 let letterDiv = document.getElementById('word' + nextRow + "_" + (i+1));
-                console.log(revealedWord)
                 if(revealedWord[i]==="p") {
                     letterDiv.innerHTML = winningWord[i];
                 }

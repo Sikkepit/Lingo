@@ -90,7 +90,9 @@ let wordList = ["appel", "aldus", "afwas", "aftel", "aarde", "altijd", "armen", 
 "vazen", "vurig", "veler", "woord", "wagen", "wonen", "waren", "warme", "weten", "water", "weren", "wazig", "wegen", "weven", 
 "wijken", "wezen", "weken", "wordt", "waard", "winst", "wijzen", "wacht", "wilde", "werkt", "welke", "woont", "wanen", "wijnen", 
 "witte", "wisse", "wijten", "woede", "wenst", "wapen", "weegt", "warmt", "werpt", "wenen", "worst", "weesp", "wraak", "zwaar", 
-"zware", "zesde", "zagen", "zalig", "zomer", "zeden", "zwart", "zeven", "zicht", "zadel", "zoals", "laken",
+"zware", "zesde", "zagen", "zalig", "zomer", "zeden", "zwart", "zeven", "zicht", "zadel", "zoals", "laken", "egaal",
+"kreng", "sloep", "vijgen", "neger", "gozer", "wijden", "wijlen", "waakt", "vrees", "terts", "vloei", "stink", "lesje",
+"leegt", "matje", "glipt", "sliep", "zwalk", "staar", 
 "zaken", "zeker", "zaten", "zelfs", "zulke", "zonde", "zorgt", "zodra", "zowel", "zover", "zodat", "zette", "zalen", "zegde", 
 "zoden", "zowat", "zocht", "zwemt", "zotte", "zijnde", "zacht", "zoekt", "zweed", "zepen", "zones", "zinkt", "zeeijs", "zadig", 
 "zwaan", "zetje", "zoete", "zakje", "zetel", "zakte", "zwoer", "zweet", "zulks", "zonen", "zegel", "zeeuw"];
@@ -149,6 +151,7 @@ function resetGameField (){
 
 
 function prepareGameField (){
+    inputField.value = "";
     guessCounter = 0;
     revealedWord = "pxxxx";
     winningWord = chooseWinningWord();

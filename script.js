@@ -66,7 +66,7 @@ let wordList = ["appel", "aldus", "afwas", "aftel", "aarde", "altijd", "armen", 
 "regen", "radio", "rente", "regio", "rugby", "reden", "roken", "ruzie", "ruist", "regel", "racen", "races", "radar", "recht", 
 "flets", "flats", "kater", "tepel", "kinds", "piekt", "wiegt", "zebra", "deken", "daken", "bedel", "vulva", "kille", "braak",
 "poets", "koter", "anker", "barst", "kregen", "adder", "imker", "aards", "poker", "vlaag", "leken", "larve", "oksel", "eerst",
-"huilt", "eikel", "duikt", "deert", "bruid", "baars", "baard", "blaag", "speer", "stoor", "zever",
+"huilt", "eikel", "duikt", "deert", "bruid", "baars", "baard", "blaag", "speer", "stoor", "zever", "kavel" , "katje",
 "raken", "reist", "ronde", "regie", "ruime", "route", "ruilt", "raakt", "rijtje", "ruige", "rende", "ramde", "ratio", "rijder", 
 "rover", "raket", "roest", "ramen", "roman", "reeks", "revue", "rijker", "roept", "reeds", "range", "richt", "rhode", "rijken", 
 "river", "rigby", "rozen", "ruikt", "riekt", "retro", "staan", "staal", "speel", "steeg", "stoel", "stook", "steek", "schep", 
@@ -111,7 +111,8 @@ prepareGameField();
 
 function chooseWinningWord() {
     let winningWordIndex = Math.floor(Math.random() * wordList.length);
-    let winningWord = wordList[winningWordIndex];
+    let winningWord = "TONIJN";
+    // let winningWord = wordList[winningWordIndex];
     return ijCheck(winningWord);
 }
 
@@ -119,6 +120,15 @@ function chooseWinningWord() {
 function ijCheck(word) {
     if(word.includes("ij")){
         return (word.split("ij")[0] + "9" + word.split("ij")[1]).toUpperCase();
+    }
+    else {
+        return word.toUpperCase();
+    }
+}
+
+function addTheEggBack (word) {
+    if(word.includes("9")){
+        return (word.split("ij")[0] + "IJ" + word.split("ij")[1]).toUpperCase();
     }
     else {
         return word.toUpperCase();
@@ -307,7 +317,7 @@ function showWinScreen () {
 function showLoseScreen() {
     document.getElementById('win-lose-message').innerHTML = "GAME OVER";
     document.getElementById('win-lose-h3').innerHTML = "Het woord was:";
-    document.getElementById('win-lose-h4').innerHTML = winningWord;
+    document.getElementById('win-lose-h4').innerHTML = addTheEggBack(winningWord);
     document.getElementById('overlay').style.display = "block";
     document.getElementById('loseButton').style.display = "inline-block";
     document.getElementById('nextWordButton').style.display = "none";

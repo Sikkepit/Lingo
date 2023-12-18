@@ -118,11 +118,11 @@ function chooseWinningWord() {
     let winningWordIndex = Math.floor(Math.random() * wordList.length);
     // let winningWord = "gelijk";
     let winningWord = wordList[winningWordIndex];
-    return ijCheck(winningWord);
+    return takeOutTheEgg(winningWord);
 }
 
 // Check if the word contains the substring "ij". In Dutch these are seen as one letter
-function ijCheck(word) {
+function takeOutTheEgg(word) {
     if(word.includes("ij")){
         return (word.split("ij")[0] + "9" + word.split("ij")[1]).toUpperCase();
     }
@@ -130,7 +130,7 @@ function ijCheck(word) {
         return word.toUpperCase();
     }
 }
-
+// Bring the 'IJ' back in the word
 function addTheEggBack (word) {
     if(word.includes("9")){
         return (word.split("9")[0] + "IJ" + word.split("9")[1]).toUpperCase();
@@ -160,7 +160,7 @@ function prepareGameField (){
     revealedWord = "pxxxx";
     winningWord = chooseWinningWord();
 
-    // For debugging/demo purposes
+    // For debugging/cheating purposes
     console.log(winningWord);
 
 
@@ -180,7 +180,6 @@ function prepareGameField (){
 }
 
 // ERROR HANDLING
-
 function invalidInputError() {
     inputField.style.color = "red";
     inputField.style.outlineColor = "red";
@@ -197,7 +196,7 @@ function restoreAfterError() {
 
 function guess() {
     guessedWord = inputField.value;
-    guessedWord = ijCheck(guessedWord);
+    guessedWord = takeOutTheEgg(guessedWord);
     lenghtCheck = guessedWord.length;
 
     if(lenghtCheck===5) {
@@ -266,7 +265,7 @@ function addGuessToList(guessedWord) {
     for (let i = 0; i < guessedWord.length; i++) {
         let placeForWord = document.getElementById('word' + guessCounter + "_" + (i+1));
 
-        // change temporary character "9" back to "IJ" if applicable"
+        // Change temporary character "9" back to "IJ" if applicable"
         if(guessedWord[i]==9){
             placeForWord.innerHTML = "IJ";
         }
@@ -330,5 +329,3 @@ function showLoseScreen() {
     document.getElementById("guess").disabled = true;
     document.getElementById("loseButton").focus();
 }
-
-

@@ -97,7 +97,8 @@ let wordList = ["appel", "aldus", "afwas", "aftel", "aarde", "altijd", "armen", 
 "voogd", "hekel", "roeit", "vlijen", "vrijen", "veder", "kluif", "klink", "klonk", "krabt", "fluim", "bakte", "nicht",
 "neder", "hinde", "vlerk", "zweer", "sleur", "traan", "baant", "horde", "piste", "pasje", "kraag", "sneer", "graas", 
 "zaken", "zeker", "zaten", "zelfs", "zulke", "zonde", "zorgt", "zodra", "zowel", "zover", "zodat", "zette", "zalen", "zegde", 
-"zoden", "zowat", "zocht", "zwemt", "zotte", "zijnde", "zacht", "zoekt", "zweed", "zepen", "zones", "zinkt", "zeeijs", "zadig", 
+"zoden", "zowat", "zocht", "zwemt", "zotte", "zijnde", "zacht", "zoekt", "zweed", "zepen", "zones", "zinkt", "zeeijs", "zadig",
+"uiers", "uitje", "zitje", "bijlen", "ceder", "vijler", "unies",  
 "zwaan", "zetje", "zoete", "zakje", "zetel", "zakte", "zwoer", "zweet", "zulks", "zonen", "zegel", "zeeuw"];
 
 // MAKE THE BUTTON AND KEYBOARD WORK
@@ -116,7 +117,7 @@ prepareGameField();
 
 function chooseWinningWord() {
     let winningWordIndex = Math.floor(Math.random() * wordList.length);
-    // let winningWord = "gelijk";
+    // let winningWord = "rijken";
     let winningWord = wordList[winningWordIndex];
     return takeOutTheEgg(winningWord);
 }
@@ -289,7 +290,7 @@ function addGuessToList(guessedWord) {
             if (guessedWord !== winningWord) {
                 let letterDiv = document.getElementById('word' + nextRow + "_" + (i+1));
                 if(revealedWord[i]==="p") {
-                    letterDiv.innerHTML = winningWord[i];
+                    letterDiv.innerHTML = addTheEggBack(winningWord[i]);
                 }
                 else {
                     letterDiv.innerHTML = ".";

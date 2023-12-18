@@ -55,14 +55,14 @@ let wordList = ["appel", "aldus", "afwas", "aftel", "aarde", "altijd", "armen", 
 "merkt", "meten", "menig", "mondt", "match", "meldt", "motie", "modus", "maker", "marge", "manen", "massa", "meent", 
 "magma", "moord", "milde", "merel", "moren", "maine", "mengt", "menen", "mythe", "miste", "maagd", "magic", "matte", "ketel",
 "metro", "maden", "matig", "motto", "noord", "nieuw", "negen", "namen", "neven", "nodig", "naden", "nooit", "naast", "nemen", 
-"netto", "niets", "neemt", "nadat", "nibud", "nogal", "nacht", "noten", "nader", "noemt", "natte", "nabije", "notie", "nobel", 
+"netto", "niets", "neemt", "nadat", "nogal", "nacht", "noten", "nader", "noemt", "natte", "nabije", "notie", "nobel", 
 "natst", "natie", "neppe", "nevel", "noors", "naakt", "nepal", "onder", "optel", "ovaal", "ovale", "onwel", "optie", "uilen", 
 "oppas", "omdat", "oogst", "opdat", "omzet", "opzet", "ophef", "ook", "ofwel", "ouder", "oogje", "oprit", "order", "onzin", 
 "omweg", "orale", "omver", "opent", "otter", "omvat", "opera", "oxide", "oases", "opbod", "oever", "palen", "plein", "pegel", 
 "paars", "piano", "pixel", "paden", "pasta", "pizza", "poten", "paard", "puber", "pauze", "pasen", "partij", "poort", "praat", 
 "plans", "prima", "puien", "peren", "pleit", "parijs", "paren", "plukt", "prijst", "pakte", "panne", "proef", "pluto", "palet", 
 "plaag", "plaat", "pijlen", "prins", "polen", "party", "pater", "prooi", "pijpen", "panda", "potje", "plots", "plaza", 
-"porto", "pilot", "petje", "print", "plant", "peper", "prees", "quota", "quote", "qatar", "robot", "rijden", "reken", "raden", 
+"pilot", "petje", "print", "plant", "peper", "prees", "quota", "quote", "qatar", "robot", "rijden", "reken", "raden", 
 "regen", "radio", "rente", "regio", "rugby", "reden", "roken", "ruzie", "ruist", "regel", "racen", "races", "radar", "recht", 
 "flets", "flats", "kater", "tepel", "kinds", "piekt", "wiegt", "zebra", "deken", "daken", "bedel", "vulva", "kille", "braak",
 "poets", "koter", "anker", "barst", "kregen", "adder", "imker", "aards", "poker", "vlaag", "leken", "larve", "oksel", "eerst",
@@ -98,7 +98,8 @@ let wordList = ["appel", "aldus", "afwas", "aftel", "aarde", "altijd", "armen", 
 "neder", "hinde", "vlerk", "zweer", "sleur", "traan", "baant", "horde", "piste", "pasje", "kraag", "sneer", "graas", 
 "zaken", "zeker", "zaten", "zelfs", "zulke", "zonde", "zorgt", "zodra", "zowel", "zover", "zodat", "zette", "zalen", "zegde", 
 "zoden", "zowat", "zocht", "zwemt", "zotte", "zijnde", "zacht", "zoekt", "zweed", "zepen", "zones", "zinkt", "zeeijs", "zadig",
-"uiers", "uitje", "zitje", "bijlen", "ceder", "vijler", "unies",  
+"uiers", "uitje", "zitje", "bijlen", "ceder", "vijler", "unies", "baden", "kraak", "bruut", "beken", "nekje", "koets", "klier",
+"naait", "mijden", "manie", "navel", "prijkt", 
 "zwaan", "zetje", "zoete", "zakje", "zetel", "zakte", "zwoer", "zweet", "zulks", "zonen", "zegel", "zeeuw"];
 
 // MAKE THE BUTTON AND KEYBOARD WORK
@@ -117,8 +118,8 @@ prepareGameField();
 
 function chooseWinningWord() {
     let winningWordIndex = Math.floor(Math.random() * wordList.length);
-    // let winningWord = "rijken";
-    let winningWord = wordList[winningWordIndex];
+    let winningWord = "rijken";
+    // let winningWord = wordList[winningWordIndex];
     return takeOutTheEgg(winningWord);
 }
 
@@ -162,7 +163,7 @@ function prepareGameField (){
     winningWord = chooseWinningWord();
 
     // For debugging/cheating purposes
-    console.log(winningWord);
+    console.log(addTheEggBack(winningWord));
 
 
     document.getElementById('overlay').style.display = "none";

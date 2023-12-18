@@ -18,16 +18,16 @@ let wordList = ["appel", "aldus", "afwas", "aftel", "aarde", "altijd", "armen", 
 "beleg", "batig", "boden", "bezat", "beker", "conus", "cello", "creme", "clubs", "circa", "chaos", "dorst", "heien",
 "chips", "claim", "cyber", "chili", "cobra", "cijfer", "cycli", "crime", "cover", "clara", "coole", "corps", "crash", "canon", 
 "cupid", "check", "draai", "deden", "dalen", "derde", "delen", "dwaas", "daden", "dader", "dames", "diner", "datum", "dozen", 
-"dreun", "duits", "dagen", "deren", "dwerg", "dwaal", "dwing", "druil", "droog", "draad", "dweil", "drank", "duren", "dwars", 
+"dreun", "dagen", "deren", "dwerg", "dwaal", "dwing", "druil", "droog", "draad", "dweil", "drank", "duren", "dwars", 
 "drugs", "deels", "dient", "dacht", "droom", "duurt", "dates", "daten", "denkt", "dvb-c", "dreef", "durft", "diepe", "drift", 
-"duidt", "dikte", "dikke", "droeg", "debat", "dicht", "deals", "deens", "daagt", "daalt", "dutch", "deelt", "drive", "drukt", 
+"duidt", "dikte", "dikke", "droeg", "debat", "dicht", "deals", "daagt", "daalt", "dutch", "deelt", "drive", "drukt", 
 "diens", "domme", "drama", "dwaze", "dieet", "dorre", "dubai", "drong", "delft", "droge", "dijken", "delta", "dwong", "darts", 
 "diego", "doden", "dwang", "draag", "duwen", "draak", "dankt", "doorn", "elven", "eigen", "enger", "engel", "elder", "enkel", 
 "effen", "enorm", "enige", "ermee", "eerst", "extra", "einde", "eruit", "ether", "ervan", "echte", "erger", "eiken", "email", 
 "eisen", "ertoe", "exact", "eters", "eraan", "elite", "elfde", "eiste", "ergen", "eerde", "fiets", "friet", 
 "files", "forel", "films", "feest", "fruit", "falen", "flora", "fauna", "feeen", "freak", "forse", "flink", "flauw", "fonds", 
 "frans", "fraai", "feite", "forum", "focus", "faalt", "fries", "fikse", "fotos", "fagen", "fasen", "felle", "foute", "frame", 
-"fusie", "fluor", "funky", "finse", "firma", "front", "folie", "fases", "geven", "gaven", "groen", "graai", "getal", "grens", 
+"fusie", "fluor", "funky", "firma", "front", "folie", "fases", "geven", "gaven", "groen", "graai", "getal", "grens", 
 "grond", "groef", "graal", "gewei", "games", "grote", "groet", "garen", "groep", "gezin", "gelijk", "groot", "gezag", "genie", 
 "graag", "geeft", "goede", "groei", "gehad", "geuit", "geval", "geldt", "gezet", "gaten", "genre", "graaf", "gooit", "gemak", 
 "goeie", "greep", "gejat", "gaart", "gedoe", "gloed", "guppy", "gevel", "gered", "glimp", "genen", "griep", "goden", "ghana", 
@@ -44,7 +44,7 @@ let wordList = ["appel", "aldus", "afwas", "aftel", "aarde", "altijd", "armen", 
 "kreeg", "kijken", "keuze", "kwart", "krijgt", "korte", "kabel", "kopen", "klant", "kogel", "koers", "kunst", "komst", "kiest", 
 "kozen", "kwaad", "kapot", "kookt", "koste", "klaar", "koopt", "kroeg", "kopje", "klimt", "krimp", "kocht", "kloot", "kwade", 
 "keken", "kloof", "koele", "knoop", "knipt", "kampt", "konijn", "krans", "korps", "kende", "kreta", "kolen", "koper", 
-"kongo", "keert", "kruis", "kaken", "kliko", "kenia", "kwast", "kruik", "kwijt", "kleed", "knaap", "klank", "keten", "lopen", 
+"keert", "kruis", "kaken", "kliko", "kenia", "kwast", "kruik", "kwijt", "kleed", "knaap", "klank", "keten", "lopen", 
 "laten", "lelijk", "lepel", "links", "laden", "leven", "lezen", "lucht", "lenen", "laser", "lente", "licht", "lader", "leder", 
 "lunch", "leger", "leden", "legen", "lagen", "lezer", "lever", "lingo", "langs", "legde", "luidt", "liegt", "leidt", "later", 
 "laude", "latijn", "lager", "lange", "leren", "leeft", "leuke", "lijken", "lukte", "leert", "liter", "lijnen", "laars", "leeuw", 
@@ -52,7 +52,7 @@ let wordList = ["appel", "aldus", "afwas", "aftel", "aarde", "altijd", "armen", 
 "least", "limes", "leges", "linie", "louis", "lobby", "looks", "lover", "loper", "level", "loods", "label", "luier", "lacht", 
 "lands", "loden", "maand", "malen", "maken", "media", "meter", "motor", "maten", "markt", "mazen", "molen", "meest", "meren", 
 "mijter", "mogen", "macht", "minst", "mooie", "maakt", "moest", "medio", "maart", "malta", "model", "mocht", "musea", "muren", 
-"merkt", "moers", "meten", "menig", "mondt", "match", "meldt", "motie", "modus", "maker", "marge", "manen", "massa", "meent", 
+"merkt", "meten", "menig", "mondt", "match", "meldt", "motie", "modus", "maker", "marge", "manen", "massa", "meent", 
 "magma", "moord", "milde", "merel", "moren", "maine", "mengt", "menen", "mythe", "miste", "maagd", "magic", "matte", "ketel",
 "metro", "maden", "matig", "motto", "noord", "nieuw", "negen", "namen", "neven", "nodig", "naden", "nooit", "naast", "nemen", 
 "netto", "niets", "neemt", "nadat", "nibud", "nogal", "nacht", "noten", "nader", "noemt", "natte", "nabije", "notie", "nobel", 
@@ -92,7 +92,9 @@ let wordList = ["appel", "aldus", "afwas", "aftel", "aarde", "altijd", "armen", 
 "witte", "wisse", "wijten", "woede", "wenst", "wapen", "weegt", "warmt", "werpt", "wenen", "worst", "weesp", "wraak", "zwaar", 
 "zware", "zesde", "zagen", "zalig", "zomer", "zeden", "zwart", "zeven", "zicht", "zadel", "zoals", "laken", "egaal",
 "kreng", "sloep", "vijgen", "neger", "gozer", "wijden", "wijlen", "waakt", "vrees", "terts", "vloei", "stink", "lesje",
-"leegt", "matje", "glipt", "sliep", "zwalk", "staar", 
+"leegt", "matje", "glipt", "sliep", "zwalk", "staar", "morst", "klaag", "kring", "kever", "kluis", "gekte", "geile", "zwerf",
+"sluis", "manke", "snert", "toets", "dagje", "druif", "dadel", "degen", "drink", "glijdt", "gever", "edele", "puist", "penis",
+"voogd", "hekel", "roeit", 
 "zaken", "zeker", "zaten", "zelfs", "zulke", "zonde", "zorgt", "zodra", "zowel", "zover", "zodat", "zette", "zalen", "zegde", 
 "zoden", "zowat", "zocht", "zwemt", "zotte", "zijnde", "zacht", "zoekt", "zweed", "zepen", "zones", "zinkt", "zeeijs", "zadig", 
 "zwaan", "zetje", "zoete", "zakje", "zetel", "zakte", "zwoer", "zweet", "zulks", "zonen", "zegel", "zeeuw"];
@@ -113,7 +115,8 @@ prepareGameField();
 
 function chooseWinningWord() {
     let winningWordIndex = Math.floor(Math.random() * wordList.length);
-    let winningWord = wordList[winningWordIndex];
+    let winningWord = "gelijk";
+    // let winningWord = wordList[winningWordIndex];
     return ijCheck(winningWord);
 }
 
@@ -129,7 +132,7 @@ function ijCheck(word) {
 
 function addTheEggBack (word) {
     if(word.includes("9")){
-        return (word.split("ij")[0] + "IJ" + word.split("ij")[1]).toUpperCase();
+        return (word.split("9")[0] + "IJ" + word.split("9")[1]).toUpperCase();
     }
     else {
         return word.toUpperCase();

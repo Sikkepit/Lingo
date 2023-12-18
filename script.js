@@ -115,8 +115,8 @@ prepareGameField();
 
 function chooseWinningWord() {
     let winningWordIndex = Math.floor(Math.random() * wordList.length);
-    let winningWord = "gelijk";
-    // let winningWord = wordList[winningWordIndex];
+    // let winningWord = "gelijk";
+    let winningWord = wordList[winningWordIndex];
     return ijCheck(winningWord);
 }
 

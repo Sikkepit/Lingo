@@ -100,7 +100,8 @@ let wordList = ["appel", "aldus", "afwas", "aftel", "aarde", "altijd", "armen", 
 "zoden", "zowat", "zocht", "zwemt", "zotte", "zijnde", "zacht", "zoekt", "zweed", "zepen", "zones", "zinkt", "zeeijs", "zadig",
 "uiers", "uitje", "zitje", "bijlen", "ceder", "vijler", "unies", "baden", "kraak", "bruut", "beken", "nekje", "koets", "klier",
 "naait", "mijden", "manie", "navel", "prijkt", "bikte", "bonen", "vergt", "griet", "graat", "kudde", "kleef", "krast", "jarig",
-"jankt", "jofel", "lakte", "loser", "lanen", "gebed", "tarot", "steil", "kroos", 
+"jankt", "jofel", "lakte", "loser", "lanen", "gebed", "tarot", "steil", "kroos", "preek", "pruim", "hulpje", "kraam", "arken", "aorta",
+"tover", "veter", "lekte", "loket", "joker", "deint", "dikst", "totem",  
 "zwaan", "zetje", "zoete", "zakje", "zetel", "zakte", "zwoer", "zweet", "zulks", "zonen", "zegel", "zeeuw"];
 
 // MAKE THE BUTTON AND KEYBOARD WORK

@@ -202,15 +202,11 @@ function guess() {
     let check = guessedWord.toLowerCase();
     guessedWord = takeOutTheEgg(check);
     let lengthCheck = guessedWord.length;
-    if(lengthCheck===5) {
-        if(wordList.includes(check)){
+    
+    if(lengthCheck===5 && wordList.includes(check)) {
             guessCounter++;
             inputField.value = "";
             addGuessToList(guessedWord);
-        }
-        else {
-            invalidInputError();
-        }
     }
     else {
         invalidInputError();

@@ -199,11 +199,11 @@ function restoreAfterError() {
 
 function guess() {
     guessedWord = inputField.value;
-    guessedWord = takeOutTheEgg(guessedWord);
-    let lenghtCheck = guessedWord.length;
-
-    if(lenghtCheck===5) {
-        if(wordList.includes(inputField.value)){
+    let check = guessedWord.toLowerCase();
+    guessedWord = takeOutTheEgg(check);
+    let lengthCheck = guessedWord.length;
+    if(lengthCheck===5) {
+        if(wordList.includes(check)){
             guessCounter++;
             inputField.value = "";
             addGuessToList(guessedWord);

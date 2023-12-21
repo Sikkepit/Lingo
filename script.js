@@ -1,10 +1,10 @@
 const submitButton = document.getElementById('submit');
 const inputField = document.getElementById('guess');
-let guessList = [];
 let guessedWord = "";
 let guessCounter = 0;
 let streak = 0;
 let revealedWord = "pxxxxx";
+let winningWord = "";
 
 let wordList = ["appel", "aldus", "afwas", "aftel", "aarde", "altijd", "armen", "actie", "apart", "adres", "avond", "aders", "airco", 
 "amper", "ander", "akker", "angst", "alles", "arena", "ademt", "alsof", "april", "allen", "autos", "alpen", "armoe", "admin", "appen", 
@@ -104,12 +104,12 @@ let wordList = ["appel", "aldus", "afwas", "aftel", "aarde", "altijd", "armen", 
 "zwaan", "zetje", "zoete", "zakje", "zetel", "zakte", "zwoer", "zweet", "zulks", "zonen", "zegel", "zeeuw"];
 
 // MAKE THE BUTTON AND KEYBOARD WORK
-submitButton.addEventListener("click",guess)
+submitButton.addEventListener("click",guess);
 inputField.addEventListener("keypress", function(event){
     if(event.key === "Enter") {
         guess();
     }
-})
+});
 
 
 // INITIALIZE GAME
@@ -120,7 +120,7 @@ prepareGameField();
 function chooseWinningWord() {
     let winningWordIndex = Math.floor(Math.random() * wordList.length);
     // let winningWord = "rijken";
-    let winningWord = wordList[winningWordIndex];
+    winningWord = wordList[winningWordIndex];
     return takeOutTheEgg(winningWord);
 }
 
@@ -172,7 +172,7 @@ function prepareGameField (){
 
     // Put the first letter for the first word on the board
     let row = guessCounter + 1;
-    let placeFirstLetter = document.getElementById('word' + row + '_1')
+    let placeFirstLetter = document.getElementById('word' + row + '_1');
     placeFirstLetter.innerHTML = winningWord[0];
 
     // Add dots in place of the letters that need to be guessed
@@ -192,7 +192,7 @@ function invalidInputError() {
 }
 
 function restoreAfterError() {
-    inputField.style.color = "white"
+    inputField.style.color = "white";
     inputField.style.outlineColor = "white";
     submitButton.style.backgroundColor = "#04AA6D";
 }
@@ -200,7 +200,7 @@ function restoreAfterError() {
 function guess() {
     guessedWord = inputField.value;
     guessedWord = takeOutTheEgg(guessedWord);
-    lenghtCheck = guessedWord.length;
+    let lenghtCheck = guessedWord.length;
 
     if(lenghtCheck===5) {
         if(wordList.includes(inputField.value)){
@@ -223,7 +223,6 @@ function updateRevealedWord(i) {
 
 function addGuessToList(guessedWord) {
     let guessedLetters = "";
-    let perfectGuessed = 0;
 
     // colors will become a string presentation of which colors the corresponding div need to be
     let colors = "xxxxx";
@@ -241,7 +240,6 @@ function addGuessToList(guessedWord) {
     }
     let goodGuessedLetters = "";
     before = "";
-    after = ""; 
 
     for (let i = 0; i < guessedWord.length; i++) {
     
@@ -298,7 +296,7 @@ function addGuessToList(guessedWord) {
                     letterDiv.innerHTML = ".";
                 }
             }
-            document.getElementById("guess").focus()
+            document.getElementById("guess").focus();
         }
         else if(guessedWord === winningWord){
             break;

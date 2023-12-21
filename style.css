@@ -29,7 +29,8 @@ body {
 }
 #guess {
     border-radius: 20px;
-    height: 65px;
+    height: 45px;
+    width:200px;
     padding: 20px;
     font-size: 1.1em;
     text-align: center;
@@ -49,8 +50,8 @@ body {
 
 #submit {
     border-radius: 50%;
-    height: 65px;
-    width: 65px;
+    height: 45px;
+    width: 45px;
     background-color: #04AA6D;
     border: 2px solid black;
     color: white;
@@ -95,9 +96,9 @@ div.word:last-child div {
     border-bottom: 1px solid black;
 }
 div.word > div {
-    width: 80px;
-    height: 80px;
-    font-size: 50px;
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
     font-weight: bold;
     -webkit-text-stroke: 1px black;
     display: flex;
@@ -115,7 +116,7 @@ div.word >div:last-child {
 
 .input-word {
     margin-top: 20px;
-    width: 400px;
+    width: 300px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -123,7 +124,7 @@ div.word >div:last-child {
 #overlay {
     min-height: 100%;
     min-width: 100%;
-    background:rgba(0,0,0,0.8);
+    background:rgba(0,0,0,0.9);
     position: absolute;
 }
 

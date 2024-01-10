@@ -1,11 +1,8 @@
 *, *:before, *:after {
     box-sizing: border-box;
   }
-html {
-    height: 100%;
-}
+
 body {
-    height: 100%;
     margin:0;
     background-color: #4158D0;
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
@@ -13,16 +10,16 @@ body {
     background-attachment: fixed;
 }
 
-
 .container {
-    height: 100%;
+    height: 100dvh;
     display: flex;
     flex-direction: column;
     align-items: center; 
     justify-content: center;
-    text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+
 #guesses {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #103254;
@@ -126,6 +123,7 @@ div.word >div:last-child {
     min-width: 100%;
     background:rgba(0,0,0,0.9);
     position: absolute;
+    z-index: 100;
 }
 
 #overlay-content {
@@ -154,4 +152,72 @@ h4 {
     margin: 10px;
     font-size: 1.3em;
 }
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.art {
+    width: 80px;
+    height: 80px;
+    font-size: 52px;
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    padding:2px;
+    border: 1px solid black;
+    background: linear-gradient(0deg, rgba(36,112,190,1) 35%, rgba(77,151,212,1) 100%);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+#logo {
+    display: flex;
+    margin-bottom:70px;
+    margin-left: 50px;
+}
+#logo:last-child div {
+    border-bottom: 1px solid black;
+}
+
+.art:nth-child(1) {
+    z-index: 3;
+    background: #E8D00A;
+}
+.art:nth-child(2) {
+    transform: translate(-10px, 15px);
+    z-index: 2;
+}
+.art:nth-child(3) {
+    transform: translate(-20px, 4px);
+    background: #04AA6D;
+    z-index: 1;
+}
+.art:nth-child(4) {
+    transform: translate(-40px, -20px);
+    z-index: 3;
+    background:#AB141A;
+    scale:0.94;
+}
+.art:nth-child(5) {
+    transform: translate(-55px, -3px);
+    z-index: 1;
+    background: #E8D00A;
+}

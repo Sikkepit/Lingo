@@ -101,7 +101,7 @@ let wordList = ["appel", "aldus", "afwas", "aftel", "aarde", "altijd", "armen", 
 "uiers", "uitje", "zitje", "bijlen", "ceder", "vijler", "unies", "baden", "kraak", "bruut", "beken", "nekje", "koets", "klier",
 "naait", "mijden", "manie", "navel", "prijkt", "bikte", "bonen", "vergt", "griet", "graat", "kudde", "kleef", "krast", "jarig",
 "gerot", "farao", "fluit", "floot", "spoot", "spuit", "spaak", "zingt", "zwikt", "breek", "takel", "toner", "event", "cider", "vroom",
-"modem", "haper",
+"modem", "haper", "klapt", 
 "jankt", "jofel", "lakte", "loser", "lanen", "gebed", "tarot", "steil", "kroos", "preek", "pruim", "kraam", "arken", "aorta",
 "tover", "veter", "lekte", "loket", "joker", "deint", "dikst", "totem", "laadt", "laakt", "luikt", "gruis", "doven", "sterf",
 "zwaan", "zetje", "zoete", "zakje", "zetel", "zakte", "zwoer", "zweet", "zulks", "zonen", "zegel", "zeeuw"];
